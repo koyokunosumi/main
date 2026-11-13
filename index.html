@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コヨクノスミ | 事業概要</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- ヘッダー -->
+    <header class="bg-white border-b border-slate-200 py-6">
+        <div class="max-w-3xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wider text-slate-900">コヨクノスミ</h1>
+            <span class="text-xs bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-medium">事業運営中</span>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-3xl mx-auto px-6 py-12 flex-grow w-full">
+        
+紹介文・事業内容
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-slate-900">事業概要</h2>
+            <p class="text-slate-600 leading-relaxed mb-4">
+                「コヨクノスミ」は、デジタルプロダクトの企画・開発およびITサービスの運営を行う個人事業です。
+                今後は自社製モバイルアプリケーション（iOS / Android）の開発を中心に、ユーザーの日常を少し便利に、楽しくするサービスの展開を予定しております。
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-1">📱 アプリケーション開発</h3>
+                    <p class="text-sm text-slate-600">モバイルアプリおよびWebサービスの企画・設計・開発。</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-1">🎮 Webコンテンツ運営</h3>
+                    <p class="text-sm text-slate-600">軽量なWebミニゲーム等の企画・運営・技術検証。</p>
+                </div>
+            </div>
+        </section>
+
+        公開中のコンテンツ（ミニゲームなど）
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold mb-4 text-slate-900">プロダクト・実績</h2>
+            <p class="text-slate-600 mb-4">
+                現在公開中のWebコンテンツやミニゲームはこちらからご確認いただけます。
+            </p>
+            <div class="space-y-3">
+                <!-- ここに実際のゲームのリンクやリポジトリのリンクを貼ってください -->
+                <a href="#minigame" class="block p-4 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/30 transition group">
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-slate-900 group-hover:text-emerald-700">サンプル・ミニゲーム（Web版）</span>
+                        <span class="text-xs text-slate-400 group-hover:text-emerald-600">プレイする →</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1">ブラウザ上で手軽に遊べる軽量なミニゲームのプロトタイプです。</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+        <p>&copy; <span id="year"></span> コヨクノスミ All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // 自動で西暦を表示する
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
